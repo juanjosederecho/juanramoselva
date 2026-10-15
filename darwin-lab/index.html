@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183c34">
+  <meta name="description" content="Aprende a explicar la evolución por selección natural con Darwin Lab: lecciones narradas, infografías, casos, práctica universitaria y examen de 20 preguntas.">
+  <link rel="icon" href="assets/darwin-mark.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
+  <title>Darwin Lab — La vida deja pistas</title>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación del curso">
+      <a href="#inicio" class="brand" aria-label="Darwin Lab, inicio">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"/><circle cx="22" cy="22" r="12"/><path d="M11 28c6 0 13-6 22-15M22 22l10 1-6 6M17 31l1-8"/><path d="M27 13c4 0 7 2 8 5-4 1-7 0-9-3"/></svg></span>
+        <span><strong>Darwin Lab</strong><small>CUADERNO DE CAMPO · 01</small></span>
+      </a>
+      <div class="sidebar-kicker">RUTA DE APRENDIZAJE</div>
+      <nav class="lesson-nav" id="lesson-nav" aria-label="Módulos">
+        <a href="#inicio" class="nav-link nav-home is-active"><span class="nav-index">↗</span> Inicio</a>
+        <div id="module-links"></div>
+        <a href="#videos" class="nav-link"><span class="nav-index">V</span> Mirar y escuchar</a>
+        <a href="#practica" class="nav-link"><span class="nav-index">A</span> Admisión universitaria</a>
+        <a href="#examen" class="nav-link"><span class="nav-index">20</span> Examen final</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="progress-head"><span>Tu recorrido</span><span id="progress-label">0 / 9</span></div>
+        <div class="progress-track" role="progressbar" aria-label="Módulos completados" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0"><span id="progress-fill"></span></div>
+        <p id="progress-note">Marca cada módulo al terminarlo. Tu avance queda guardado aquí.</p>
+        <button class="offline-button" id="offline-button" type="button"><span aria-hidden="true">↓</span> Preparar para estudiar sin conexión</button>
+        <div id="offline-status" class="micro-status" aria-live="polite"></div>
+      </div>
+    </aside>
+
+    <main id="contenido">
+      <header class="topbar"><button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de módulos" aria-expanded="false" type="button">☰</button><span class="topbar-label">BIOLOGÍA · EVOLUCIÓN</span><span class="topbar-meta"><i aria-hidden="true"></i> SESIÓN AUTÓNOMA</span></header>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dash"></span> GUÍA DE CAMPO <span>·</span> SESIÓN 01</p>
+          <h1 id="hero-title">La vida<br>deja <em>pistas.</em></h1>
+          <p class="hero-lede">Sigue las señales que llevaron a Darwin a explicar cómo cambian las poblaciones, generación tras generación.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#leccion-evolucion">Empezar a explorar <span aria-hidden="true">→</span></a><span class="hero-meta">9 lecturas · audio pausable · 20 preguntas</span></div>
+          <div class="field-stamp"><span class="stamp-icon" aria-hidden="true">01</span><span>OBSERVACIÓN<br><b>Darwin · Selección natural</b></span></div>
+        </div>
+        <figure class="hero-image"><img src="assets/photos/00-galapagos-portada.webp" alt="Costa volcánica de Galápagos y un pinzón posado en roca de lava" fetchpriority="high"><figcaption><span>01 / 06</span> Islas Galápagos · variación y lugar</figcaption></figure>
+        <div class="hero-index" aria-hidden="true"><span>UNA IDEA</span><b>01</b><span>UN MECANISMO</span><b>02</b><span>MUCHAS EVIDENCIAS</span><b>03</b></div>
+      </section>
+
+      <section class="orientation" aria-label="Cómo aprender con Darwin Lab"><div class="orientation-lead"><span class="eyebrow">ANTES DE EMPEZAR</span><h2>Observa. Compara.<br><em>Explica.</em></h2></div><div class="orientation-step"><span>01</span><p>Lee las explicaciones y mira cómo conectan los conceptos.</p></div><div class="orientation-step"><span>02</span><p>Escucha cada módulo; puedes pausar y seguir a tu ritmo.</p></div><div class="orientation-step"><span>03</span><p>Comprueba tu razonamiento y al final intenta el examen.</p></div></section>
+
+      <section class="course-section" id="ruta" aria-labelledby="route-title"><div class="section-heading"><div><p class="eyebrow">LA RUTA <span>·</span> NUEVE MÓDULOS</p><h2 id="route-title">Del cambio a la <em>evidencia</em></h2></div><p>Construye la explicación paso a paso. Cada audio viene con apuntes de lectura para que elijas cómo aprender.</p></div><div id="lesson-list" class="lesson-list"></div></section>
+
+      <section class="video-section" id="videos" aria-labelledby="video-title"><div class="section-heading"><div><p class="eyebrow">OTRAS VOCES <span>·</span> 03:05</p><h2 id="video-title">Un caso en <em>movimiento</em></h2></div><p>Un recurso breve para conectar la historia de Darwin con la variación entre pinzones.</p></div><div class="video-feature"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/s64Y8sVYfFY?rel=0" title="Evolución por selección natural: los pinzones de Darwin, FuseSchool, 3 minutos y 5 segundos" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-caption"><span class="video-time">03:05 · INGLÉS</span><h3>Evolution by Natural Selection: Darwin’s Finches</h3><p>FuseSchool repasa el viaje del Beagle, la variación de los picos y la selección natural en los pinzones.</p><a href="https://www.youtube.com/watch?v=s64Y8sVYfFY" target="_blank" rel="noopener noreferrer">Abrir en YouTube <span aria-hidden="true">↗</span></a></div></div><p class="video-note">El video está en inglés. Puedes activar subtítulos en el reproductor. Se incluye solo porque su duración publicada es de 3:05 minutos.</p></section>
+
+      <section class="assessment-section" id="practica" aria-labelledby="practice-title"><div class="section-heading"><div><p class="eyebrow">ENTRENAMIENTO <span>·</span> NIVEL ADMISIÓN</p><h2 id="practice-title">Piensa como <em>examinador.</em></h2></div><p>Diez preguntas de aplicación para entrenar la lectura de datos, la inferencia y los distractores típicos.</p></div><div class="exam-intro"><div><span class="exam-number">10</span><div><strong>Preguntas de selección única</strong><p>Elige una opción y revisa las explicaciones. El puntaje se guarda en este dispositivo.</p></div></div><span class="difficulty-tag">18+ · APLICACIÓN</span></div><form id="practice-form" class="quiz-form" aria-describedby="practice-instructions"><p class="sr-only" id="practice-instructions">Selecciona una respuesta en cada pregunta y pulsa Corregir mis respuestas para ver la puntuación y las explicaciones.</p><div id="practice-questions"></div><div class="quiz-actions"><button type="submit" class="button button-primary">Corregir mis respuestas <span aria-hidden="true">→</span></button><button type="button" class="button button-quiet" data-reset="practice">Empezar de nuevo</button></div><div class="quiz-result" id="practice-result" aria-live="polite" tabindex="-1"></div></form></section>
+
+      <section class="final-exam-section" id="examen" aria-labelledby="final-title"><div class="exam-header"><div><p class="eyebrow">CIERRE DE SESIÓN <span>·</span> EVALUACIÓN FINAL</p><h2 id="final-title">Veinte preguntas.<br><em>Una explicación.</em></h2><p class="final-copy">Conecta variación, herencia, contexto y reproducción. Después de responder, revisa el porqué de cada opción.</p></div><div class="round-mark" aria-hidden="true"><span>EXAMEN</span><b>20</b><span>ÍTEMS</span></div></div><form id="final-form" class="quiz-form" aria-describedby="final-instructions"><p class="sr-only" id="final-instructions">Selecciona una respuesta en cada pregunta y pulsa Corregir mis respuestas para ver la puntuación y las explicaciones.</p><div id="final-questions"></div><div class="quiz-actions"><button type="submit" class="button button-primary">Corregir mis respuestas <span aria-hidden="true">→</span></button><button type="button" class="button button-quiet" data-reset="final">Reiniciar evaluación</button></div><div class="quiz-result" id="final-result" aria-live="polite" tabindex="-1"></div></form></section>
+
+      <footer class="site-footer"><div class="footer-mark"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"/><circle cx="22" cy="22" r="12"/><path d="M11 28c6 0 13-6 22-15M22 22l10 1-6 6M17 31l1-8"/><path d="M27 13c4 0 7 2 8 5-4 1-7 0-9-3"/></svg></span><div><strong>Darwin Lab</strong><span>Una sesión para aprender a observar el cambio.</span></div></div><div class="footer-references"><span class="eyebrow">PARA SEGUIR LEYENDO</span><a href="https://education.nationalgeographic.org/resource/natural-selection/" target="_blank" rel="noopener noreferrer">National Geographic Education · Natural selection ↗</a><a href="https://www.biointeractive.org/classroom-resources/natural-selection-and-evolution-darwins-finches" target="_blank" rel="noopener noreferrer">HHMI BioInteractive · Darwin’s finches ↗</a><a href="https://www.youtube.com/watch?v=s64Y8sVYfFY" target="_blank" rel="noopener noreferrer">FuseSchool · video de 3:05 ↗</a></div><p class="footer-note">Recurso didáctico independiente. El video enlazado pertenece a su autor. La evolución por selección natural no es una explicación intencional: depende de variación heredable, condiciones ambientales y éxito reproductivo relativo.</p></footer>
+    </main>
+  </div>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

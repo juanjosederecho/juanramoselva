@@ -1,0 +1,15 @@
+{
+  "name": "Darwin Lab — Evolución y selección natural",
+  "short_name": "Darwin Lab",
+  "description": "Cuaderno de campo digital para aprender evolución por selección natural.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f5f4ee",
+  "theme_color": "#183c34",
+  "lang": "es",
+  "icons": [
+    { "src": "assets/darwin-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
